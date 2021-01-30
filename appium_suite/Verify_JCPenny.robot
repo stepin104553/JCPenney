@@ -46,4 +46,5 @@ TC1_ValidCredential
    ${Total_price}    Get Text    //*[@resource-id='com.jcp:id/total_price']
    Log To Console    ${Total_price}    
    Click Element    //*[contains(@text,'Valli')]
+   Sleep    2s    
    Click Element  //*[@resource-id='com.jcp:id/my_account_sign_out']

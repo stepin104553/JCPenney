@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210128 10:19:29.993" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210130 16:26:43.344" rpa="false">
 <suite id="s1" name="JCPenney" source="C:\robotics\robot_workspace\JCPenney">
 <suite id="s1-s1" name="Appium Suite" source="C:\robotics\robot_workspace\JCPenney\appium_suite">
-<suite id="s1-s1-s1" name="Verify" source="C:\robotics\robot_workspace\JCPenney\appium_suite\Verify.robot">
+<suite id="s1-s1-s1" name="Verify JCPenny" source="C:\robotics\robot_workspace\JCPenney\appium_suite\Verify_JCPenny.robot">
 <test id="s1-s1-s1-t1" name="TC1_ValidCredential">
 <kw name="Open Application" library="AppiumLibrary">
 <doc>Opens a new application to given Appium server.
@@ -19,21 +19,21 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>appActivity=com.jcpenney.activities.StartupActivity</arg>
 <arg>noReset=True</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:19:30.343" endtime="20210128 10:19:46.586"></status>
+<status status="PASS" starttime="20210130 16:26:43.763" endtime="20210130 16:27:01.442"></status>
 </kw>
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <doc>Sets the timeout in seconds used by various keywords.</doc>
 <arguments>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:19:46.586" endtime="20210128 10:19:46.587"></status>
+<status status="PASS" starttime="20210130 16:27:01.443" endtime="20210130 16:27:01.444"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Sign In</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:19:46.588" endtime="20210128 10:20:02.453"></status>
+<status status="PASS" starttime="20210130 16:27:01.444" endtime="20210130 16:27:23.025"></status>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
@@ -46,48 +46,48 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>//*[contains(@text='Allow all the time')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:02.456" level="INFO">Clicking element '//*[contains(@text='Allow all the time')]'.</msg>
+<msg timestamp="20210130 16:27:23.028" level="INFO">Clicking element '//*[contains(@text='Allow all the time')]'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210128 10:20:05.726" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210128 10:20:03.179" endtime="20210128 10:20:05.727"></status>
+<msg timestamp="20210130 16:27:25.253" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210130 16:27:23.457" endtime="20210130 16:27:25.253"></status>
 </kw>
-<msg timestamp="20210128 10:20:05.731" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: java.lang.IllegalStateException: Unable to evaluate expression. See cause
+<msg timestamp="20210130 16:27:25.258" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: java.lang.IllegalStateException: Unable to evaluate expression. See cause
 </msg>
-<status status="FAIL" starttime="20210128 10:20:02.455" endtime="20210128 10:20:05.732"></status>
+<status status="FAIL" starttime="20210130 16:27:23.026" endtime="20210130 16:27:25.259"></status>
 </kw>
-<status status="PASS" starttime="20210128 10:20:02.454" endtime="20210128 10:20:05.732"></status>
+<status status="PASS" starttime="20210130 16:27:23.025" endtime="20210130 16:27:25.259"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@text='Sign In or Create an Account']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:05.734" level="INFO">Clicking element '//*[@text='Sign In or Create an Account']'.</msg>
-<status status="PASS" starttime="20210128 10:20:05.733" endtime="20210128 10:20:06.473"></status>
+<msg timestamp="20210130 16:27:25.262" level="INFO">Clicking element '//*[@text='Sign In or Create an Account']'.</msg>
+<status status="PASS" starttime="20210130 16:27:25.260" endtime="20210130 16:27:27.193"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>//*[contains(@resource-id,'sign_in_email_address_or_mobile_number')]</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:06.474" endtime="20210128 10:20:07.665"></status>
+<status status="PASS" starttime="20210130 16:27:27.194" endtime="20210130 16:27:27.253"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[contains(@resource-id,'sign_in_email_address_or_mobile_number')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:07.667" level="INFO">Clicking element '//*[contains(@resource-id,'sign_in_email_address_or_mobile_number')]'.</msg>
-<status status="PASS" starttime="20210128 10:20:07.666" endtime="20210128 10:20:07.816"></status>
+<msg timestamp="20210130 16:27:27.255" level="INFO">Clicking element '//*[contains(@resource-id,'sign_in_email_address_or_mobile_number')]'.</msg>
+<status status="PASS" starttime="20210130 16:27:27.254" endtime="20210130 16:27:27.413"></status>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <doc>Clears the text field identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:07.819" level="INFO">Clear text field 'xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]'</msg>
-<status status="PASS" starttime="20210128 10:20:07.817" endtime="20210128 10:20:08.953"></status>
+<msg timestamp="20210130 16:27:27.416" level="INFO">Clear text field 'xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]'</msg>
+<status status="PASS" starttime="20210130 16:27:27.414" endtime="20210130 16:27:28.640"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -95,16 +95,16 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]</arg>
 <arg>valli.potlacheruvu@gmail.com</arg>
 </arguments>
-<msg timestamp="20210128 10:20:08.955" level="INFO">Typing text 'valli.potlacheruvu@gmail.com' into text field 'xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]'</msg>
-<status status="PASS" starttime="20210128 10:20:08.954" endtime="20210128 10:20:10.520"></status>
+<msg timestamp="20210130 16:27:28.642" level="INFO">Typing text 'valli.potlacheruvu@gmail.com' into text field 'xpath=//*[contains(@text,'Email') or contains(@text,'gmail')]'</msg>
+<status status="PASS" starttime="20210130 16:27:28.640" endtime="20210130 16:27:30.261"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@text='Password']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:10.523" level="INFO">Clicking element '//*[@text='Password']'.</msg>
-<status status="PASS" starttime="20210128 10:20:10.521" endtime="20210128 10:20:12.045"></status>
+<msg timestamp="20210130 16:27:30.264" level="INFO">Clicking element '//*[@text='Password']'.</msg>
+<status status="PASS" starttime="20210130 16:27:30.262" endtime="20210130 16:27:31.143"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -112,39 +112,39 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>//*[@text='Password']</arg>
 <arg>V@lli2023</arg>
 </arguments>
-<msg timestamp="20210128 10:20:12.047" level="INFO">Typing text 'V@lli2023' into text field '//*[@text='Password']'</msg>
-<status status="PASS" starttime="20210128 10:20:12.046" endtime="20210128 10:20:13.186"></status>
+<msg timestamp="20210130 16:27:31.145" level="INFO">Typing text 'V@lli2023' into text field '//*[@text='Password']'</msg>
+<status status="PASS" starttime="20210130 16:27:31.143" endtime="20210130 16:27:32.673"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@text='SIGN IN']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:13.189" level="INFO">Clicking element '//*[@text='SIGN IN']'.</msg>
-<status status="PASS" starttime="20210128 10:20:13.187" endtime="20210128 10:20:13.746"></status>
+<msg timestamp="20210130 16:27:32.675" level="INFO">Clicking element '//*[@text='SIGN IN']'.</msg>
+<status status="PASS" starttime="20210130 16:27:32.673" endtime="20210130 16:27:33.475"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>//*[contains(@resource-id,'com.jcp:id/search_button')]</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:13.747" endtime="20210128 10:20:18.902"></status>
+<status status="PASS" starttime="20210130 16:27:33.476" endtime="20210130 16:27:39.074"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[contains(@resource-id,'com.jcp:id/search_button')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:18.905" level="INFO">Clicking element '//*[contains(@resource-id,'com.jcp:id/search_button')]'.</msg>
-<status status="PASS" starttime="20210128 10:20:18.903" endtime="20210128 10:20:20.165"></status>
+<msg timestamp="20210130 16:27:39.076" level="INFO">Clicking element '//*[contains(@resource-id,'com.jcp:id/search_button')]'.</msg>
+<status status="PASS" starttime="20210130 16:27:39.075" endtime="20210130 16:27:39.521"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210128 10:20:22.167" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210128 10:20:20.165" endtime="20210128 10:20:22.169"></status>
+<msg timestamp="20210130 16:27:41.523" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210130 16:27:39.521" endtime="20210130 16:27:41.523"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -152,8 +152,8 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>//*[@resource-id='com.jcp:id/search_src_text']</arg>
 <arg>baby</arg>
 </arguments>
-<msg timestamp="20210128 10:20:22.173" level="INFO">Typing text 'baby' into text field '//*[@resource-id='com.jcp:id/search_src_text']'</msg>
-<status status="PASS" starttime="20210128 10:20:22.169" endtime="20210128 10:20:22.660"></status>
+<msg timestamp="20210130 16:27:41.526" level="INFO">Typing text 'baby' into text field '//*[@resource-id='com.jcp:id/search_src_text']'</msg>
+<status status="PASS" starttime="20210130 16:27:41.524" endtime="20210130 16:27:42.046"></status>
 </kw>
 <kw name="Is Keyboard Shown" library="AppiumLibrary">
 <doc>Return true if Android keyboard is displayed or False if not displayed
@@ -161,8 +161,8 @@ No parameters are used.</doc>
 <assign>
 <var>${bool}</var>
 </assign>
-<msg timestamp="20210128 10:20:23.055" level="INFO">${bool} = True</msg>
-<status status="PASS" starttime="20210128 10:20:22.661" endtime="20210128 10:20:23.056"></status>
+<msg timestamp="20210130 16:27:42.555" level="INFO">${bool} = True</msg>
+<status status="PASS" starttime="20210130 16:27:42.046" endtime="20210130 16:27:42.555"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -173,85 +173,85 @@ No parameters are used.</doc>
 <kw name="Hide Keyboard" library="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" starttime="20210128 10:20:23.057" endtime="20210128 10:20:25.670"></status>
+<status status="PASS" starttime="20210130 16:27:42.556" endtime="20210130 16:27:44.958"></status>
 </kw>
-<status status="PASS" starttime="20210128 10:20:23.056" endtime="20210128 10:20:25.671"></status>
+<status status="PASS" starttime="20210130 16:27:42.556" endtime="20210130 16:27:44.958"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Infant Baby Boy Clothes</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:25.671" endtime="20210128 10:20:26.551"></status>
+<status status="PASS" starttime="20210130 16:27:44.959" endtime="20210130 16:27:45.931"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[contains(@text,'Infant Baby Boy Clothes')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:26.553" level="INFO">Clicking element '//*[contains(@text,'Infant Baby Boy Clothes')]'.</msg>
-<status status="PASS" starttime="20210128 10:20:26.552" endtime="20210128 10:20:27.423"></status>
+<msg timestamp="20210130 16:27:45.933" level="INFO">Clicking element '//*[contains(@text,'Infant Baby Boy Clothes')]'.</msg>
+<status status="PASS" starttime="20210130 16:27:45.932" endtime="20210130 16:27:46.862"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>//*[contains(@text,'Baby Boys Pant Set')]</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:27.424" endtime="20210128 10:20:32.140"></status>
+<status status="PASS" starttime="20210130 16:27:46.862" endtime="20210130 16:28:01.505"></status>
 </kw>
 <kw name="Tap" library="AppiumLibrary">
 <doc>Tap element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[contains(@text,'Baby Boys Pant Set')]</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:32.140" endtime="20210128 10:20:32.795"></status>
+<status status="PASS" starttime="20210130 16:28:01.506" endtime="20210130 16:28:02.519"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210128 10:20:37.797" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210128 10:20:32.796" endtime="20210128 10:20:37.797"></status>
+<msg timestamp="20210130 16:28:07.521" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210130 16:28:02.520" endtime="20210130 16:28:07.521"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@text='3 months']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:37.800" level="INFO">Clicking element '//*[@text='3 months']'.</msg>
-<status status="PASS" starttime="20210128 10:20:37.798" endtime="20210128 10:20:38.797"></status>
+<msg timestamp="20210130 16:28:07.525" level="INFO">Clicking element '//*[@text='3 months']'.</msg>
+<status status="PASS" starttime="20210130 16:28:07.522" endtime="20210130 16:28:08.001"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@text='ADD TO CART']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:38.799" level="INFO">Clicking element '//*[@text='ADD TO CART']'.</msg>
-<status status="PASS" starttime="20210128 10:20:38.798" endtime="20210128 10:20:40.245"></status>
+<msg timestamp="20210130 16:28:08.003" level="INFO">Clicking element '//*[@text='ADD TO CART']'.</msg>
+<status status="PASS" starttime="20210130 16:28:08.002" endtime="20210130 16:28:10.582"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210128 10:20:45.248" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210128 10:20:40.246" endtime="20210128 10:20:45.248"></status>
+<msg timestamp="20210130 16:28:15.584" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210130 16:28:10.583" endtime="20210130 16:28:15.584"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@resource-id='com.jcp:id/cart_icon']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:45.251" level="INFO">Clicking element '//*[@resource-id='com.jcp:id/cart_icon']'.</msg>
-<status status="PASS" starttime="20210128 10:20:45.249" endtime="20210128 10:20:45.893"></status>
+<msg timestamp="20210130 16:28:15.587" level="INFO">Clicking element '//*[@resource-id='com.jcp:id/cart_icon']'.</msg>
+<status status="PASS" starttime="20210130 16:28:15.585" endtime="20210130 16:28:16.240"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>//*[@resource-id='com.jcp:id/product_description']</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:45.893" endtime="20210128 10:20:48.510"></status>
+<status status="PASS" starttime="20210130 16:28:16.240" endtime="20210130 16:28:18.945"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -261,16 +261,16 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <assign>
 <var>${product_name}</var>
 </assign>
-<msg timestamp="20210128 10:20:49.759" level="INFO">Element '//*[@resource-id='com.jcp:id/product_description']' text is 'Carter's Baby Boys Pant Set' </msg>
-<msg timestamp="20210128 10:20:49.759" level="INFO">${product_name} = Carter's Baby Boys Pant Set</msg>
-<status status="PASS" starttime="20210128 10:20:48.510" endtime="20210128 10:20:49.760"></status>
+<msg timestamp="20210130 16:28:19.717" level="INFO">Element '//*[@resource-id='com.jcp:id/product_description']' text is 'Carter's Baby Boys Pant Set' </msg>
+<msg timestamp="20210130 16:28:19.718" level="INFO">${product_name} = Carter's Baby Boys Pant Set</msg>
+<status status="PASS" starttime="20210130 16:28:18.946" endtime="20210130 16:28:19.718"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${product_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:49.760" endtime="20210128 10:20:49.761"></status>
+<status status="PASS" starttime="20210130 16:28:19.718" endtime="20210130 16:28:19.719"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -280,52 +280,58 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <assign>
 <var>${Total_price}</var>
 </assign>
-<msg timestamp="20210128 10:20:50.924" level="INFO">Element '//*[@resource-id='com.jcp:id/total_price']' text is 'total $48.00' </msg>
-<msg timestamp="20210128 10:20:50.924" level="INFO">${Total_price} = total $48.00</msg>
-<status status="PASS" starttime="20210128 10:20:49.761" endtime="20210128 10:20:50.924"></status>
+<msg timestamp="20210130 16:28:19.958" level="INFO">Element '//*[@resource-id='com.jcp:id/total_price']' text is 'total $72.00' </msg>
+<msg timestamp="20210130 16:28:19.959" level="INFO">${Total_price} = total $72.00</msg>
+<status status="PASS" starttime="20210130 16:28:19.719" endtime="20210130 16:28:19.959"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Total_price}</arg>
 </arguments>
-<status status="PASS" starttime="20210128 10:20:50.925" endtime="20210128 10:20:50.926"></status>
+<status status="PASS" starttime="20210130 16:28:19.959" endtime="20210130 16:28:19.960"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[contains(@text,'Valli')]</arg>
 </arguments>
-<msg timestamp="20210128 10:20:50.928" level="INFO">Clicking element '//*[contains(@text,'Valli')]'.</msg>
-<status status="PASS" starttime="20210128 10:20:50.926" endtime="20210128 10:20:51.526"></status>
+<msg timestamp="20210130 16:28:19.961" level="INFO">Clicking element '//*[contains(@text,'Valli')]'.</msg>
+<status status="PASS" starttime="20210130 16:28:19.960" endtime="20210130 16:28:20.261"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@resource-id='com.jcp:id/my_account_sign_out']</arg>
 </arguments>
-<msg timestamp="20210128 10:20:51.528" level="INFO">Clicking element '//*[@resource-id='com.jcp:id/my_account_sign_out']'.</msg>
-<status status="PASS" starttime="20210128 10:20:51.526" endtime="20210128 10:20:53.296"></status>
+<msg timestamp="20210130 16:28:20.263" level="INFO">Clicking element '//*[@resource-id='com.jcp:id/my_account_sign_out']'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210130 16:28:21.699" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210130 16:28:20.812" endtime="20210130 16:28:21.700"></status>
 </kw>
-<status status="PASS" starttime="20210128 10:19:30.342" endtime="20210128 10:20:53.296" critical="yes"></status>
+<msg timestamp="20210130 16:28:21.701" level="FAIL">ValueError: Element locator '//*[@resource-id='com.jcp:id/my_account_sign_out']' did not match any elements.</msg>
+<status status="FAIL" starttime="20210130 16:28:20.262" endtime="20210130 16:28:21.701"></status>
+</kw>
+<status status="FAIL" starttime="20210130 16:26:43.761" endtime="20210130 16:28:21.702" critical="yes">ValueError: Element locator '//*[@resource-id='com.jcp:id/my_account_sign_out']' did not match any elements.</status>
 </test>
-<status status="PASS" starttime="20210128 10:19:30.092" endtime="20210128 10:20:53.297"></status>
+<status status="FAIL" starttime="20210130 16:26:43.474" endtime="20210130 16:28:21.703"></status>
 </suite>
-<status status="PASS" starttime="20210128 10:19:30.088" endtime="20210128 10:20:53.300"></status>
+<status status="FAIL" starttime="20210130 16:26:43.470" endtime="20210130 16:28:21.706"></status>
 </suite>
-<status status="PASS" starttime="20210128 10:19:30.054" endtime="20210128 10:20:53.309"></status>
+<status status="FAIL" starttime="20210130 16:26:43.434" endtime="20210130 16:28:21.709"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="JCPenney">JCPenney</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Appium Suite">JCPenney.Appium Suite</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="Verify">JCPenney.Appium Suite.Verify</stat>
+<stat pass="0" fail="1" id="s1" name="JCPenney">JCPenney</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Appium Suite">JCPenney.Appium Suite</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Verify JCPenny">JCPenney.Appium Suite.Verify JCPenny</stat>
 </suite>
 </statistics>
 <errors>
